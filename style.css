@@ -1,0 +1,73 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: linear-gradient(135deg, #fdd6e0, #d1f1ff);
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    color: #ff6f91;
+    font-weight: 3rem;
+    margin-top: 20px;
+}
+#board{
+    margin: 50px auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+
+}
+.square{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    background-color: #fffcf2;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6f91;
+    transition: background-color 0.3s,box-shadow 0.3s;
+}
+.square:hover{
+    background-color: #d4f8e8;
+}
+.square.win{
+    background-color: #FF9F89;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+#restartButton{
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 160px;
+    background-color: #ffb3c6;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+#restartButton:hover{
+    background-color: #ff6f91;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+#endGame{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
